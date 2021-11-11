@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20211107T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases>
+    <phase name="prototyping"/>
+    <phase name="testing"/>
+  </phases>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="full kubernetes install AWS" note="" work="864000" start="20211107T000000Z" end="20211217T170000Z" work-start="20211108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="lab testing grading / edx integration" note="" work="720000" start="20220107T170000Z" end="20220211T170000Z" work-start="20220110T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="3" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="3" name="integrating: AWS " note="" work="288000" start="20211224T170000Z" end="20220107T170000Z" work-start="20211227T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="4" type="FS"/>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="Final docker image" note="" work="204300" start="20211202T170000Z" end="20211214T084500Z" work-start="20211203T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="5" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="5" name="Kernels" note="" work="1080000" start="20211107T000000Z" end="20211202T170000Z" work-start="20211108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="6" name="Julia" note="" work="316800" start="20211116T170000Z" end="20211201T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="7" name="R" note="" work="345600" start="20211116T170000Z" end="20211202T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="8" name="Octave" note="" work="216000" start="20211116T170000Z" end="20211126T120000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="9" name="Python" note="" work="201600" start="20211107T000000Z" end="20211116T170000Z" work-start="20211108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="10" name="Grading" note="" work="806400" start="20211116T170000Z" end="20211224T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="11" name="nbnotebook" note="" work="806400" start="20211116T170000Z" end="20211224T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="12" name="18.02.1x launch" note="" work="720900" start="20220215T000000Z" end="20220322T081500Z" work-start="20220215T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20220215T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
