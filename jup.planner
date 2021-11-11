@@ -60,7 +60,7 @@
       <task id="9" name="Python" note="" work="201600" start="20211107T000000Z" end="20211116T170000Z" work-start="20211108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
     <task id="10" name="Grading" note="" work="806400" start="20211116T170000Z" end="20211224T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="11" name="nbnotebook" note="" work="806400" start="20211116T170000Z" end="20211224T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="11" name="nbgrader" note="" work="806400" start="20211116T170000Z" end="20211224T170000Z" work-start="20211117T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="9" type="FS"/>
         </predecessors>
